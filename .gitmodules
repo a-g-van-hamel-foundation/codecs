@@ -1,0 +1,84 @@
+[submodule "extensions/AdminLinks"]
+	path = extensions/AdminLinks
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/AdminLinks
+	branch = REL1_35
+[submodule "extensions/Arrays"]
+	path = extensions/Arrays
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Arrays
+	branch = REL1_35
+[submodule "extensions/AutoCreatePage"]
+	path = extensions/AutoCreatePage
+	url = https://github.com/mkroetzsch/AutoCreatePage.git
+	branch = master
+[submodule "extensions/DeleteBatch"]
+	path = extensions/DeleteBatch
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/DeleteBatch
+	branch = REL1_35
+[submodule "extensions/DisplayTitle"]
+	path = extensions/DisplayTitle
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/DisplayTitle
+	branch = REL1_35
+[submodule "extensions/Loops"]
+	path = extensions/Loops
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Loops
+	branch = REL1_35
+[submodule "extensions/MyVariables"]
+	path = extensions/MyVariables
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/MyVariables
+	branch = REL1_35
+[submodule "extensions/NoTitle"]
+	path = extensions/NoTitle
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/NoTitle
+	branch = REL1_35
+[submodule "extensions/NumberFormat"]
+	path = extensions/NumberFormat
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/NumberFormat
+	branch = REL1_35
+[submodule "extensions/RegexFun"]
+	path = extensions/RegexFun
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/RegexFun
+	branch = REL1_35
+[submodule "extensions/TitleKey"]
+	path = extensions/TitleKey
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/TitleKey
+	branch = REL1_35
+[submodule "extensions/UrlGetParameters"]
+	path = extensions/UrlGetParameters
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/UrlGetParameters
+	branch = REL1_35
+[submodule "extensions/UserMerge"]
+	path = extensions/UserMerge
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/UserMerge
+	branch = REL1_35
+[submodule "extensions/Variables"]
+	path = extensions/Variables
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Variables
+	branch = REL1_35
+[submodule "extensions/Widgets"]
+	path = extensions/Widgets
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Widgets
+	branch = REL1_35
+[submodule "extensions/WSArrays"]
+	path = extensions/WSArrays
+	url = git@bitbucket.org:wikibasesolutions/wsarrays.git
+	branch = master
+[submodule "extensions/WSForm"]
+	path = extensions/WSForm
+	url = git@bitbucket.org:wikibasesolutions/mw-wsform.git
+	branch = master
+[submodule "extensions/WSPageSync"]
+	path = extensions/WSPageSync
+	url = git@bitbucket.org:wikibasesolutions/ws-pagesync-2.0.git
+	branch = master
+[submodule "extensions/WSTools"]
+	path = extensions/WSTools
+	url = git@bitbucket.org:wikibasesolutions/wstools.git
+	branch = master
+[submodule "extensions/Lockdown"]
+	path = extensions/Lockdown
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Lockdown
+	branch = REL1_35
+[submodule "extensions/MWUnit"]
+	path = extensions/MWUnit
+	url = https://github.com/26/MWUnit.git
+	branch = master
