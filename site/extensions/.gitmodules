@@ -6,7 +6,7 @@
 	path = extensions/Arrays
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Arrays
 	branch = REL1_35
-[submodule "extensions/AutoCreatePage"]
+[submodule "extensionfs/AutoCreatePage"]
 	path = extensions/AutoCreatePage
 	url = https://github.com/mkroetzsch/AutoCreatePage.git
 	branch = master
@@ -17,6 +17,14 @@
 [submodule "extensions/DisplayTitle"]
 	path = extensions/DisplayTitle
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/DisplayTitle
+	branch = REL1_35
+[submodule "extensions/FlexDiagrams"]	
+	path = extensions/FlexDiagrams
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/FlexDiagrams.git
+	branch = REL1_35
+[submodule "extensions/ImportUsers"]
+	path = extensions/ImportUsers
+	url = https://github.com/wikimedia/mediawiki-extensions-ImportUsers.git
 	branch = REL1_35
 [submodule "extensions/Loops"]
 	path = extensions/Loops
