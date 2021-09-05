@@ -1,0 +1,35 @@
+<noinclude>For demonstration purposes, this is a simple MediaWiki widget (https://www.mediawiki.org/wiki/Extension:Widgets) using Smarty syntax to load a default instance of [https://github.com/ProjectMirador/mirador Mirador] with a [https://iiif.io IIIF] manifest URL. It does not use any additional plugins. 
+
+<pre>{{#widget:Mirador3-plain
+|manifest=https://damsssl.llgc.org.uk/iiif/2.0/4623419/manifest.json
+|canvasindex=e.g. 10 - not always supported, however, and when it is, it does not always start with the same index number (usually 0)
+}}</pre>
+
+</noinclude><includeonly><script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script><!--
+
+--><style>
+#miradorframe {
+  height: 75vh;
+  position: relative;
+  width: 100%;
+}
+#miradorframe h2 {
+    text-transform: none;
+}
+</style><!--
+
+--><div id="miradorframe"></div><!--
+
+--><script type="text/javascript">
+      Mirador.viewer({
+        id: "miradorframe",
+        // ...
+        windows: [
+          {
+            manifestId: '<!--{if (isset($manifest) && $manifest!="")}--><!--{$manifest}--><!--{/if}-->',
+            canvasIndex: <!--{$canvasindex|default:'0'}-->
+          },
+        ]
+      });
+    </script>
+</includeonly>
