@@ -1,0 +1,26 @@
+<noinclude>
+Demo of a MediaWiki widget (https://www.mediawiki.org/wiki/Extension:Widgets) using Smarty syntax to load any [https://iiif.io IIIF] manifest URL using an instance of [https://github.com/ProjectMirador/mirador Mirador 3] with two plugins, Mirador Image Tools and BSB's Mirador Image Cropper. 
+
+* Requires Widget extension to be installed first
+* You need to compile your own main.js using webpack (see example in folder) or parcel
+* Replace <code>../dist/main.js</code> in this widget with path to your script fle. 
+* The widget is to be called as follows
+
+<pre>
+{{#widget:Mirador3-example
+|manifest=https://api.bl.uk/metadata/iiif/ark:/81055/vdc_100123802477.0x000001/manifest.json
+}}
+</pre>
+
+</noinclude><includeonly><style>
+#miradorframe {
+  height: 75vh;
+  position: relative;
+  width: 100%;
+}
+
+</style><!--
+
+--><div id="miradorframe" data-manifest-url="<!--{if (isset($manifest) && $manifest!="")}--><!--{$manifest}--><!--{/if}-->"></div><!--
+
+--><script src="../dist/main.js"></script><includeonly>
