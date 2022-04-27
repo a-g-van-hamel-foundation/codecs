@@ -15,7 +15,7 @@
 					"@language": "cy-GB"
 				}
 			],
-			"value": "Dares Phrygius, [mid-14 cent. - mid-15cent.]"
+			"value": "Peniarth 47 iii [15th century]"
 		},
 		{
 			"label": [
@@ -41,7 +41,7 @@
 					"@language": "cy-GB"
 				}
 			],
-			"value": "131 pp. (foliated and paginated xv ff. + 3 ff. + 26 pp. + 28 pp. + 2 pp. + 32 pp. + 7 pp.) : vellum ; 156 to 158 x 96 to 109 mm. All three parts have been bound together at NLW."
+			"value": "32 pp.: vellum."
 		},
 		{
 			"label": "",
@@ -93,7 +93,7 @@
 					"@language": "cy-GB"
 				}
 			],
-			"value": "Preferred citation: Peniarth MS 47 [RESTRICTED ACCESS]."
+			"value": "Preferred citation: Peniarth MS 47 [RESTRICTED ACCESS] part iii."
 		},
 		{
 			"label": [
@@ -118,7 +118,7 @@
 			]
 		}
 	],
-	"description": "This part dates from the 15th century and includes a Welsh Life of Anna, a selection of triads and medical charms. ",
+	"description": "This part dates from the 15th century and includes a Welsh Life of St Anne, a selection of triads and medical charms. ",
 	"license": "http://creativecommons.org/publicdomain/mark/1.0/",
 	"logo": {
 		"@id": "https://damsssl.llgc.org.uk/iiif/2.0/image/logo/full/400,/0/default.jpg",
