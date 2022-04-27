@@ -41,7 +41,7 @@
 					"@language": "cy-GB"
 				}
 			],
-			"value": "3 folia used as binding material for Peniarth 47; vellum."
+			"value": "Three folia used as binding material for Peniarth 47; vellum."
 		},
 		{
 			"label": "",
@@ -93,7 +93,7 @@
 					"@language": "cy-GB"
 				}
 			],
-			"value": "Preferred citation: Peniarth MS 47 [RESTRICTED ACCESS]."
+			"value": "Preferred citation: Peniarth MS 47 [RESTRICTED ACCESS] - ff. 1r-3v."
 		},
 		{
 			"label": [
@@ -118,7 +118,7 @@
 			]
 		}
 	],
-	"description": "The first part of the manuscript dates from the mid 14th century and contains an early fragment of the text of Dares Phrygius in Welsh by the scribe known as the 'Anchorite'.The second and third parts date from the early to mid 15th century and include vaticinatory prose, other texts such as The Life of Anna, and some triads.",
+	"description": "A fragment of Brut y brenhinedd.",
 	"license": "http://creativecommons.org/publicdomain/mark/1.0/",
 	"logo": {
 		"@id": "https://damsssl.llgc.org.uk/iiif/2.0/image/logo/full/400,/0/default.jpg",
