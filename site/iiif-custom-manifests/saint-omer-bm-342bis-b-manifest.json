@@ -1,0 +1,154 @@
+{
+	"@context": "http://iiif.io/api/presentation/2/context.json",
+	"@type": "sc:Manifest",
+	"@id": "https://bvmm.irht.cnrs.fr/iiif/19708/manifest",
+	"viewingDirection": "left-to-right",
+	"viewingHint": "individuals",
+	"label": "SAINT-OMER, Bibliothèque municipale, 0342 bis (Reproduction intégrale) / fol. B",
+	"description": {
+		"@value": "Adapted from the original manifest (https://bvmm.irht.cnrs.fr/iiif/19708/manifest) to show the flyleaf only."
+	},
+	"thumbnail": {
+		"@id": "https://iiif.irht.cnrs.fr/iiif/France/Saint-Omer/Bibliotheque_municipale/627656201_MS0342_bis/DEPOT/627656201_MS0342_bis_0006/full/200,/0/default.jpg",
+		"service": {
+			"@context": "http://iiif.io/api/image/2/context.json",
+			"profile": "http://iiif.io/api/image/2/level2.json",
+			"@id": "https://iiif.irht.cnrs.fr/iiif/France/Saint-Omer/Bibliotheque_municipale/627656201_MS0342_bis/DEPOT/627656201_MS0342_bis_0006"
+		}
+	},
+	"metadata": [
+		{
+			"label": "Cote",
+			"value": "SAINT-OMER, Bibliothèque municipale, 0342 bis"
+		},
+		{
+			"label": "Auteur, titre, oeuvre",
+			"value": "Biblia (Ev) ; Vita et passio s. Dionysii"
+		},
+		{
+			"label": "Support",
+			"value": "parchemin"
+		},
+		{
+			"label": "Datation",
+			"value": "10e s. (fin)"
+		},
+		{
+			"label": "Dimensions (mm)",
+			"value": "285 x 200"
+		},
+		{
+			"label": "Foliotation",
+			"value": "104 f."
+		},
+		{
+			"label": "Notes",
+			"value": ""
+		},
+		{
+			"label": "Provider",
+			"value": "Bibliothèque Virtuelle des Manuscrits Médiévaux (BVMM) &ndash; IRHT-CNRS"
+		},
+		{
+			"label": "Source images",
+			"value": "https://bvmm.irht.cnrs.fr/resultRecherche/resultRecherche.php?COMPOSITION_ID=18594"
+		},
+		{
+			"label": "Source métadonnées",
+			"value": "http://medium-avance.irht.cnrs.fr/ark:/63955/md257d27cc2q"
+		}
+	],
+	"license": "http://creativecommons.org/licenses/by-nc/3.0/deed.fr",
+	"attribution": "Bibliothèque municipale de SAINT-OMER",
+	"logo": "https://bvmm.irht.cnrs.fr/includes/interface/Titre-court-en-fontin-sans-ombres-.png",
+	"related": [],
+	"seeAlso": "",
+	"within": "https://bvmm.irht.cnrs.fr/315556101/collection.json",
+	"sequences": [
+		{
+			"@id": "https://bvmm.irht.cnrs.fr/iiif/19708/sequence/default",
+			"@type": "sc:Sequence",
+			"label": "Reproduction intégrale",
+			"canvases": [
+				{
+					"@id": "https://bvmm.irht.cnrs.fr/iiif/19708/canvas/canvas-1807189",
+					"@type": "sc:Canvas",
+					"label": "f. 000Av – 000B",
+					"height": 5412,
+					"width": 7216,
+					"images": [
+						{
+							"@type": "oa:Annotation",
+							"motivation": "sc:painting",
+							"resource": {
+								"@id": "https://iiif.irht.cnrs.fr/iiif/France/Saint-Omer/Bibliotheque_municipale/627656201_MS0342_bis/DEPOT/627656201_MS0342_bis_0005/full/full/0/default.jpg",
+								"@type": "dctypes:Image",
+								"format": "image/jpeg",
+								"height": 5412,
+								"width": 7216,
+								"service": {
+									"@context": "http://iiif.io/api/image/2/context.json",
+									"@id": "https://iiif.irht.cnrs.fr/iiif/France/Saint-Omer/Bibliotheque_municipale/627656201_MS0342_bis/DEPOT/627656201_MS0342_bis_0005",
+									"profile": "http://iiif.io/api/image/2/level2.json"
+								}
+							},
+							"on": "https://bvmm.irht.cnrs.fr/iiif/19708/canvas/canvas-1807189"
+						}
+					]
+				},
+				{
+					"@id": "https://bvmm.irht.cnrs.fr/iiif/19708/canvas/canvas-1807190",
+					"@type": "sc:Canvas",
+					"label": "f. 000Bv - f. 001 avec réglet",
+					"height": 5412,
+					"width": 7216,
+					"images": [
+						{
+							"@type": "oa:Annotation",
+							"motivation": "sc:painting",
+							"resource": {
+								"@id": "https://iiif.irht.cnrs.fr/iiif/France/Saint-Omer/Bibliotheque_municipale/627656201_MS0342_bis/DEPOT/627656201_MS0342_bis_0006/full/full/0/default.jpg",
+								"@type": "dctypes:Image",
+								"format": "image/jpeg",
+								"height": 5412,
+								"width": 7216,
+								"service": {
+									"@context": "http://iiif.io/api/image/2/context.json",
+									"@id": "https://iiif.irht.cnrs.fr/iiif/France/Saint-Omer/Bibliotheque_municipale/627656201_MS0342_bis/DEPOT/627656201_MS0342_bis_0006",
+									"profile": "http://iiif.io/api/image/2/level2.json"
+								}
+							},
+							"on": "https://bvmm.irht.cnrs.fr/iiif/19708/canvas/canvas-1807190"
+						}
+					]
+				},
+				{
+					"@id": "https://bvmm.irht.cnrs.fr/iiif/19708/canvas/canvas-1807191",
+					"@type": "sc:Canvas",
+					"label": "f. 000Bv - f. 001",
+					"height": 5412,
+					"width": 7216,
+					"images": [
+						{
+							"@type": "oa:Annotation",
+							"motivation": "sc:painting",
+							"resource": {
+								"@id": "https://iiif.irht.cnrs.fr/iiif/France/Saint-Omer/Bibliotheque_municipale/627656201_MS0342_bis/DEPOT/627656201_MS0342_bis_0007/full/full/0/default.jpg",
+								"@type": "dctypes:Image",
+								"format": "image/jpeg",
+								"height": 5412,
+								"width": 7216,
+								"service": {
+									"@context": "http://iiif.io/api/image/2/context.json",
+									"@id": "https://iiif.irht.cnrs.fr/iiif/France/Saint-Omer/Bibliotheque_municipale/627656201_MS0342_bis/DEPOT/627656201_MS0342_bis_0007",
+									"profile": "http://iiif.io/api/image/2/level2.json"
+								}
+							},
+							"on": "https://bvmm.irht.cnrs.fr/iiif/19708/canvas/canvas-1807191"
+						}
+					]
+				}
+			]
+		}
+	]
+}
