@@ -9,7 +9,7 @@
 		"@value": "Adapted from the original manifest (https://bvmm.irht.cnrs.fr/iiif/19708/manifest) to show the flyleaf only."
 	},
 	"thumbnail": {
-		"@id": "https://iiif.irht.cnrs.fr/iiif/France/Saint-Omer/Bibliotheque_municipale/627656201_MS0342_bis/DEPOT/627656201_MS0342_bis_0006/full/200,/0/default.jpg",
+		"@id": "https://bvmm.irht.cnrs.fr/iiif/19708/canvas/canvas-1807189",
 		"service": {
 			"@context": "http://iiif.io/api/image/2/context.json",
 			"profile": "http://iiif.io/api/image/2/level2.json",
