@@ -1,0 +1,87 @@
+{
+	"@context": "http://iiif.io/api/presentation/2/context.json",
+	"@type": "sc:Manifest",
+	"@id": "https://codecs.vanhamel.nl/custom/bl-add-ch-19491-manifest.json",
+	"viewingDirection": "left-to-right",
+	"viewingHint": "individuals",
+	"label": "British Library, Add. Charter 19491, containing the Middle Cornish charter endorsement",
+	"description": "See https://commons.wikimedia.org/wiki/Category:British_Library_Add._Ch._19491.",
+	"thumbnail": {
+		"@id": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Add._Ch._19491_%28detail_of_Cornish_text%29.jpg/165px-Add._Ch._19491_%28detail_of_Cornish_text%29.jpg",
+		"@type": "dctypes:Image",
+		"format": "image/jpeg"
+	},
+	"sequences": [
+		{
+			"@type": "sc:Sequence",
+			"@id": "",
+			"canvases": [
+				{
+					"@id": "https://tools.wmflabs.org/zoomviewer/proxy.php?iiif=BL_Add._Ch._19491_(front).jpg/info.json",
+					"@type": "sc:Canvas",
+					"label": "Front (recto)",
+					"width": 2400,
+					"height": 1252,
+					"thumbnail": {
+						"@id": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/BL_Add._Ch._19491_%28front%29.jpg/320px-BL_Add._Ch._19491_%28front%29.jpg",
+						"@type": "dctypes:Image",
+						"format": "image/jpeg",
+						"height": 150,
+						"width": 78
+					},
+					"images": [
+						{
+							"@id": "https://tools.wmflabs.org/zoomviewer/proxy.php?iiif=BL_Add._Ch._19491_(front).jpg/info.json",
+							"@type": "oa:Annotation",
+							"motivation": "dctypes:Image",
+							"on": "https://tools.wmflabs.org/zoomviewer/proxy.php?iiif=BL_Add._Ch._19491_(front).jpg/info.json",
+							"resource": {
+								"@id": "https://upload.wikimedia.org/wikipedia/commons/8/80/BL_Add._Ch._19491_%28front%29.jpg",
+								"@type": "oa:Annotation",
+								"motivation": "dctypes:Image",
+								"format": "image/jpeg",
+								"width": 2400,
+								"height": 1252
+							}
+						}
+					],
+					"metadata": []
+				},
+
+				{
+					"@id": "https://tools.wmflabs.org/zoomviewer/proxy.php?iiif=Middle Cornish Charter Fragment (Add. Ch. 19491).jpg/info.json",
+					"@type": "sc:Canvas",
+					"label": "Back (verso, Cornish fragment)",
+					"width": 2448,
+					"height": 1836,
+					"thumbnail": {
+						"@id": "",
+						"@type": "dctypes:Image",
+						"format": "image/jpeg",
+						"height": 114,
+						"width": 153
+					},
+					"images": [
+						{
+							"@id": "https://tools.wmflabs.org/zoomviewer/proxy.php?iiif=Middle Cornish Charter Fragment (Add. Ch. 19491).jpg/info.json",
+							"@type": "oa:Annotation",
+							"motivation": "dctypes:Image",
+							"on": "https://tools.wmflabs.org/zoomviewer/proxy.php?iiif=BL_Add._Ch._19491_(front).jpg/info.json",
+							"resource": {
+								"@id": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Middle_Cornish_Charter_Fragment_%28Add._Ch._19491%29.jpg/3672px-Middle_Cornish_Charter_Fragment_%28Add._Ch._19491%29.jpg",
+								"@type": "oa:Annotation",
+								"motivation": "dctypes:Image",
+								"format": "image/jpeg",
+								"width": 2448,
+								"height": 1836
+							}
+
+						}
+					],
+					"metadata": []
+				}
+			]
+		}
+	]
+
+}
