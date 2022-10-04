@@ -163,6 +163,7 @@ class ctcRender {
     $tabWidget = new ctcTabWidget();
     $output = $tabWidget->run(
       $out,
+      $pageTitle,
       $ceteiInstanceDiv,
       $docBtnStr,
       $docPageStr,
