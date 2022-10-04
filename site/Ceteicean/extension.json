@@ -1,0 +1,209 @@
+{
+	"name": "CETEIcean",
+	"version": "0.1",
+	"type": "parserhook",
+  "author": [
+    "[https://github.com/hcayless Hugh Cayless] and [https://github.com/raffazizzi Raffaele Viglianti] (original creators)",
+		"[https://codecs.vanhamel.nl Dennis Groenewegen]"
+	],
+  "url": "https://codecs.vanhamel.nl/CETEIcean",
+  "description": "Implements the JavaScript library [https://github.com/TEIC/CETEIcean CETEIcean] to let users work with and display [https://tei-c.org/ TEI XML documents] on the wiki.",
+  "license-name": "GPL-2.0-or-later",
+  "requires": {
+		"MediaWiki": ">= 1.31.0",
+		"extensions": {
+
+		}
+	},
+	"namespaces": [
+		{
+			"id": 350,
+			"constant": "NS_CETEI",
+			"name": "Cetei",
+			"subpages": true
+		},
+		{
+			"id": 351,
+			"constant": "NS_CETEI_TALK",
+			"name": "Cetei_talk",
+			"defaultcontentmodel": "wikitext",
+			"subpages": true
+		}
+	],
+	"callback": "ctcHooks::onRegister",
+  "MessagesDirs": {
+	    "Ceteicean": [
+	      "i18n"
+	    ]
+	  },
+	"AutoloadClasses": {
+		"ctcHooks": "src/ctcHooks.php",
+		"ctcContentHandler": "src/ctcContentHandler.php",
+		"ctcContent": "src/ctcContent.php",
+    "ctcRender": "src/ctcRender.php",
+		"ctcTabWidget": "src/ctcTabWidget.php",
+		"RecursiveParser": "src/RecursiveParser.php",
+		"ctcXPath": "src/ctcXPath.php",
+		"ctcSpecialPage": "src/ctcSpecialPage.php"
+	},
+  "ExtensionMessagesFiles": {
+		"ctcMagic": "ctc.i18n.php"
+	},
+  "Hooks": {
+		"CodeEditorGetPageLanguage": "ctcHooks::onCodeEditorGetPageLanguage",
+    "ParserFirstCallInit": [
+      "ctcHooks::onParserFirstCallInit"
+    	],
+		"BeforePageDisplay": [
+			"ctcHooks::onBeforePageDisplay"
+			],
+		"Register": [
+			"ctcHooks::onRegister"
+			],
+		"ContentHandlerDefaultModelFor": [
+			"ctcHooks::contentHandlerDefaultModelFor"
+		],
+		"ResourceLoaderGetConfigVars": [
+			"ctcHooks::onResourceLoaderGetConfigVars"
+			]
+	  },
+  "AutoloadNamespaces": {
+    "ctc\\": "src/"
+  },
+	"ContentHandlers": {
+		"cetei": "ctcContentHandler"
+	},
+	"ResourceModules": {
+
+		"ext.ctc": {
+			"localBasePath": "modules",
+			"remoteExtPath": "Ceteicean/modules",
+      "packageFiles": [
+				"ext.ctc.js"
+      ],
+      "styles": [
+				"ext.ctc.lib.css",
+				"ext.ctc.less"
+			],
+      "messages": [
+				"cetei-document-invalid",
+				"cetei-header-not-available",
+				"cetei-teiheader-toggle-show",
+				"cetei-teiheader-toggle-hide"
+      ],
+      "dependencies": [
+				"ext.ceteicean.es5",
+				"mediawiki.util",
+				"ext.ctc.icons"
+      ]
+    },
+		"ext.ctc.behaviors": {
+			"localBasePath": "modules",
+			"remoteExtPath": "Ceteicean/modules",
+      "packageFiles": [
+				"ext.ctc.behaviors.js"
+      ]
+		},
+		"ext.ceteicean.es5": {
+			"localBasePath": "modules",
+			"remoteExtPath": "Ceteicean/modules",
+			"packageFiles": [
+				"lib/CETEI-ES5.js"
+			],
+			"dependencies": [
+				"ext.es5.shim"
+			]
+		},
+		"ext.es5.shim": {
+			"localBasePath": "modules",
+			"remoteExtPath": "Ceteicean/modules",
+		 	"packageFiles": [
+				"es5shim/custom-elements-es5-adapter.js"
+			],
+			"dependencies": [
+				"ext.es5.webcomponents"
+			]
+		},
+		"ext.es5.webcomponents": {
+			"localBasePath": "modules",
+			"remoteExtPath": "Ceteicean/modules",
+			"packageFiles": [
+				"es5shim/webcomponents-bundle.js"
+			]
+		},
+		"ext.ctc.wikieditor": {
+			"localBasePath": "modules",
+			"remoteExtPath": "Ceteicean/modules",
+			"packageFiles": [
+				"ext.ctc.editor.js"
+			]
+		},
+		"ext.ctc.editor.styles": {
+			"localBasePath": "modules",
+			"remoteExtPath": "Ceteicean/modules",
+			"styles": [
+				"ext.ctc.editor.less"
+			]
+		},
+		"ext.tabs.assets": {
+			"localBasePath": "modules",
+			"remoteExtPath": "Ceteicean/modules",
+			"scripts": [
+				"ext.ctc.tabs.js"
+			],
+			"styles": [
+			]
+		},
+		"ext.tabs.styles": {
+			"localBasePath": "modules",
+			"remoteExtPath": "Ceteicean/modules",
+			"styles": [
+				"ext.ctc.tabs.less"
+			]
+		},
+		"ext.oojs.assets": {
+				"localBasePath": "modules",
+				"remoteExtPath": "Ceteicean/modules",
+				"scripts": [
+					"ext.ctc.ooui.js"
+				],
+				"dependencies": [
+					"oojs",
+					"oojs-ui",
+					"oojs-ui-core",
+					"oojs-ui-widgets",
+					"oojs-ui-toolbars",
+					"oojs-ui-windows"
+				]
+		},
+		"ext.ctc.icons": {
+				"localBasePath": "modules/images",
+				"remoteExtPath": "Ceteicean/modules/images",
+				"class": "ResourceLoaderImageModule",
+				"selector": ".ctc-icon-{name}:before",
+				"prefix": "ctc-icon",
+				"defaultColor": "#000",
+				"images": {
+					"tei-logo": {
+						"file": "tei-logo.svg"
+					},
+					"code": {
+						"file": "code.svg"
+					}
+				}
+		}
+	},
+	"SpecialPages": {
+		"CETEIcean": "ctcSpecialPage"
+	},
+	"config_prefix": "wg",
+	"config": {
+		"CeteiBehaviorsJsFile": {
+			"value": "/extensions/Ceteicean/modules/ext.ctc.behaviors.js",
+			"description": "The location of the JavaScript file containing custom behaviours. See documentation."
+		}
+	},
+  "manifest_version": 2,
+  "load_composer_autoloader": false
+
+}

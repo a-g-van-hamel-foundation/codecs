@@ -1,0 +1,26 @@
+{
+  "@metadata": {
+    "authors": [
+      "Dennis Groenewegen"
+    ]
+  },
+  "ceteicean-extensionname": "CETEIcean",
+  "ceteicean": "CETEIcean",
+  "ceteicean-desc": "...",
+  "cetei-specialpage-queryheader": "The following XML pages (and documentation pages if associated) are in the NS_CETEI namespace.",
+  "cetei-no-document-found": "No document specified.",
+  "cetei-document-invalid": "The document specified or its URL is invalid.",
+  "cetei-teiheader-toggle-show": "Show the TEI Header",
+  "cetei-teiheader-toggle-hide": "Hide the TEI Header",
+  "cetei-add-documentation": "Add documentation",
+  "cetei-edit-documentation": "Edit documentation",
+  "cetei-edit-documentation-url": "{{localurl:$1|action=edit}}",
+  "cetei-no-documentation": "No additional documentation.",
+  "cetei-header-not-available": "No TEI header available.",
+  "cetei-tabheader-1": "Text",
+  "cetei-tabheader-2": "About",
+  "cetei-tabheader-3": "Source code",
+  "cetei-top-right-content": "<div></div>",
+  "cetei-credits-bottom": "TEI XML document rendered with [https://github.com/TEIC/CETEIcean CETEIcean], v. 1.7.0.",
+  "cetei-default-content": "<TEI id=\"\" xmlns=\"http://www.tei-c.org/ns/1.0\">\n<teiHeader>\n\t<fileDesc>\n\t\t<titleStmt>\n\t\t<title></title>\n\t\t</titleStmt>\n\t</fileDesc>\n</teiHeader>\n<text>\n<body>\n\n</body>\n</text>\n</TEI>"
+}

@@ -1,0 +1,48 @@
+
+/* wikieditor - adjust default size */
+.section-teixml .pages div { font-size: .7rem;}
+/* https://phabricator.wikimedia.org/T284791 - Default CodeEditor hides this section of the toolar, but we need it to expand and collapse booklets */
+.wikiEditor-ui-toolbar .sections { display:block !important; }
+.codeEditor-ui-toolbar .sections {
+     .section-advanced, .section-characters, .section-help {
+        display:none;
+     }
+}
+/* Don't show CodeMirror highlight button when the CodeEditor toolbar is active */
+.codeEditor-ui-toolbar .group-codemirror { display:none; }
+
+/* Full screen mode */
+.codeEditor-status:fullscreen  {
+	width:100%;
+}
+.wikiEditor-ui .tab.tab-rightmenu {
+	display:none; /* we don't need to toggle since we've moved out the button group */
+}
+.wikiEditor-ui:fullscreen {
+	height:100vh;
+	max-height:100vh;
+	width:100vw;
+	background-color:#f0f0f0;
+  .ui-resizable {
+	   min-height:90vh;
+  }
+  .ui-resizable-handle {
+	   display:none; /* using the handle in full screen mode leads to undesirable changes */
+  }
+  /* Fullscreen toggle buttons */
+  .oo-ui-buttonWidget[rel="fullscreen"] {
+	   display:none;
+  }
+  .oo-ui-buttonWidget[rel='exitfullscreen'] {
+	   display:inline-block;
+   }
+}
+.wikiEditor-ui:not(:fullscreen) {
+  /* Fullscreen toggle buttons */
+  .oo-ui-buttonWidget[rel="fullscreen"] {
+	   display:inline-block;
+   }
+   .oo-ui-buttonWidget[rel='exitfullscreen'] {
+     display:none;
+   }
+}

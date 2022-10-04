@@ -1,0 +1,31 @@
+<!-- 
+Cf. e.g.
+http://www.sagehill.net/livedtd/xhtml1-transitional/xhtml-lat1.ent.html
+-->
+<!ENTITY ndash "–"><!ENTITY mdash "—">
+
+<!ENTITY amacr "&#x0101;" ><!ENTITY Amacr "&#x0100;" >
+<!ENTITY emacr "&#x0113;" ><!ENTITY Emacr "&#x0112;" >
+<!ENTITY Imacr "&#x012A;" ><!ENTITY imacr "&#x012B;" >
+<!ENTITY Omacr "&#x014C;" ><!ENTITY omacr "&#x014D;" >
+<!ENTITY umacr "&#x016B;" ><!ENTITY Umacr "&#x016A;" >
+<!ENTITY smacr "s̄" >
+<!ENTITY mmacr "m̄" >
+
+<!ENTITY aacute "&#x00E1;" ><!ENTITY Aacute "&#x00C1;" >
+<!ENTITY eacute "&#x00E9;" ><!ENTITY Eacute "&#x00C9;" >
+<!ENTITY iacute "&#x00ED;" ><!ENTITY Iacute "&#x00CD;" >
+<!ENTITY oacute "&#x00F3;" ><!ENTITY Oacute "&#x00D3;" >
+<!ENTITY uacute "&#x00FA;" ><!ENTITY Uacute "&#x00DA;" >
+
+<!ENTITY auml "&#x00E4;" ><!ENTITY Auml "&#x00C4;" >
+<!ENTITY euml "&#x00EB;" ><!ENTITY Euml "&#x00CB;" >
+<!ENTITY iuml "&#x00EF;" ><!ENTITY Iuml "&#x00CF;" >
+<!ENTITY ouml "&#x00F6;" ><!ENTITY Ouml "&#x00D6;" >
+<!ENTITY uuml "&#x00FC;" ><!ENTITY Uuml "&#x00DC;" >
+
+<!ENTITY rmacr "r" >
+<!ENTITY macr " " >
+<!ENTITY ampersir "⁊" >
+<!ENTITY ndot "ṅ" >
+<!ENTITY sdot "ṡ" >

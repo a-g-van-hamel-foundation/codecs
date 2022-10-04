@@ -1,0 +1,240 @@
+.ns-350 .mw-body .firstHeading {
+  //font-size: 1rem;
+  //text-transform: uppercase;
+  //letter-spacing: .1rem;
+  //font-family: var(--font-family-sans-serif);
+}
+
+/* CUSTOM */
+
+tei-head {
+    display: block;
+}
+tei-TEI tei-head {
+	font-family: "EB Garamond", serif;
+}
+tei-body > tei-head {
+	text-indent: 0em; // restore
+}
+tei-TEI tei-title {
+  font-size: larger;
+}
+*[lemma] {
+  font-weight:bold;
+}
+tei-rubric {
+	color:darkred;
+}
+tei-div[type="section"] {
+   display:block;
+}
+tei-div[type="section"]:before {
+    content: attr(n);
+    color: #777;
+    display: inline;
+    position: absolute;
+    width:3em; /* make sure that three-digit numbers fit and are aligned to the right */
+    left: -3em;
+    top: auto;
+    text-align:right;
+}
+
+/*
+tei-div1[n] {
+	//text-indent:2em;
+	//display:block;
+}
+tei-div1[n]::before {
+	content: attr(n);
+    color: #777;
+    display: inline-block;
+    position: absolute;
+	left:-1em;
+	top:auto;
+	padding-right: 12px;
+}
+*/
+
+tei-additions::before {
+    //content: "Significant additions within the document: ";
+    color:#777;
+}
+tei-ex {
+    font-style: italic;
+}
+tei-l {
+    display: block;
+    padding-left: 5em;
+    text-indent: -2em;
+    position: relative;
+    max-width: 35em;
+    width: 100%;
+}
+/* see Buile Shuibhne - forces line number to precede tei-l on the same line */
+tei-lg tei-lb {
+  display: block !important;
+  //content: '';
+  position: absolute;
+  top: auto;
+  left: auto;
+}
+
+tei-ps, tei-persname, tei-persName,
+tei-fn, tei-foreName {
+	font-weight:bold;
+}
+tei-pn, tei-placeName {
+  font-weight:bold;
+  color: #754C5F;
+}
+tei-gloss {
+	color:darkred;
+	font-size:0.8em;
+	vertical-align: baseline;
+	position: relative;
+	top: -0.4em;
+}
+tei-app {
+	color:darkgreen;
+	font-size:0.8em;
+	vertical-align: baseline;
+	position: relative;
+	top: -0.4em;
+}
+tei-note,
+tei-front {
+	color:#777;
+	font-size:0.9em;
+}
+tei-front {
+  display:block;
+  margin-bottom:1.2rem;
+}
+tei-lb[n] {
+	display:inline;
+}
+tei-p tei-lb::before {
+  content: ' ';
+}
+tei-lb[n]::after {
+	content: '';
+}
+tei-cb::before {
+    content: "[col. " attr(n) "]";
+    color: #777;
+}
+/* used on CELT */
+tei-frn {
+	font-style:italic;
+}
+
+/* Behaviours */
+.tei-number {
+  display: inline-block;
+  color: grey;
+  padding-right: 5px;
+}
+.tei-number.line-number {
+  color: grey;
+  text-align: right;
+  padding-right: 1em;
+}
+.tei-number.line-break-number {
+  color: grey;
+  font-size:0.8em;
+}
+.tei-number.line-break-number:before {
+  content: '[';
+}
+.tei-number.line-break-number:after {
+  content: ']';
+}
+.tei-number.line-break-number:empty {
+  display:none;
+}
+.tei-number.line-group-number {
+  color:#a93737;
+}
+.tei-number.paragraph-number {
+  color: teal;
+}
+tei-body tei-head {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: .6em;
+}
+
+/* Unhide header elements when embedded in header context */
+#cetei-header tei-sourceDesc,
+#cetei-header tei-encodingdesc,
+#cetei-header tei-publicationStmt > * {
+  display:block;
+}
+
+/* Spinner before content is ready */
+.spinner-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.spinner-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #999;
+  border-color: #999 transparent #999 transparent;
+  animation: spinner-dual-ring 1.2s linear infinite;
+}
+@keyframes spinner-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.cetei-add {
+  color:#592121;
+  font-size:.85em;
+}
+/* quotes */
+.cetei-said {
+  color: teal;
+  font-weight: bold;
+}
+tei-said tei-said .cetei-said {
+  color: darkred;
+}
+
+
+.cetei-alert {
+  color: #0c5460;
+  background: #d1ecf1 linear-gradient(180deg,#d8eff3,#d1ecf1) repeat-x;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  border:1px solid #bee5eb;
+}
+
+.ctc-icon {
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: normal;
+}
+.ctc-icon::before {
+  content: '';
+  font-size:inherit;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 1em;
+  height: 1em;
+}
+
+/* Special page */
+.cetei-specialpage-header .cetei-item {
+  margin-bottom:.4em;
+}

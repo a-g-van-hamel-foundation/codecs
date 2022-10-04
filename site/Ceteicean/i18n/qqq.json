@@ -1,0 +1,11 @@
+{
+  "@metadata": {
+    "authors": [
+      "Dennis Groenewegen"
+    ]
+  },
+  "ceteicean-extensionname": "CETEIcean",
+  "ceteicean-desc": "Lets you display TEI XML documents in a web browser using JavaScript.",
+  "cetei-add-documentation": "Add documentation for this page.",
+  "cetei-top-left-content": ""
+}
