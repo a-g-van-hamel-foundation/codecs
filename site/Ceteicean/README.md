@@ -98,8 +98,9 @@ define("NS_CETEI", 350);
 define("NS_CETEI_TALK", 351);
 ```
 Because MediaWiki does not support retrieving globals from extensions, the latter two lines may be required, for instance when you want to add the namespace to Semantic MediaWiki’s `$smwgNamespacesWithSemanticLinks`).
-- Add configuration options if necessary (see below).
+- Add configuration options (optional see below).
 - Navigate to `Special:Version` on your wiki to verify that the extension is successfully installed.
+- Make sure you have the WikiEditor and CodeEditor extensions installed (optional but recommended)
 - You should be good to go.
 
 ### Configuration
@@ -119,7 +120,7 @@ var configCustomBehaviors = {
 
 ## Notes
 ### Limitations
-- Definitions of character entities need to be registered inline. The CETEIcean library does not yet support references to external DTDs. To make life easier, one of the booklets in the editor offers a default set of character definitions that can be inserted at the top of the document.
+- Definitions of character entities must be registered inline. The CETEIcean library does not yet support references to external DTDs. To make life easier, one of the booklets in the editor offers a default set of character definitions that can be inserted at the top of the document.
 - It is mandatory that the TEI element contains a namespace declaration such as `xmlns="http://www.tei-c.org/ns/1.0"`.
 - Because any content retrieved with the `#cetei` parser function is lazy-loaded, you cannot reuse it for new purposes in wikitext. For queries with XMLPath, see the ExternalData extension.
 - When it comes to handling large documents (1MB or over), there are limits to processing power. In part, this is due to the usual restrictions relating to `$wgMaxArticleSize` and the HTTP/HTTPS connector request size, but other factors may come into play, too.
