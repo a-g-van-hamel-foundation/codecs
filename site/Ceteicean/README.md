@@ -6,7 +6,9 @@ Its support for working with TEI XML is twofold: first, TEI XML documents can be
 
 This extension is being created for the CODECS website (https://codecs.vanhamel.nl), a project published by the [A. G. van Hamel Foundation for Celtic Studies](https://stichting.vanhamel.nl). It is currently in beta status and functionality at this stage is likely to be tied closely to the needs of the CODECS platform. It is not dependent on this environment, however, and you're welcome to try it out and provide feedback or patches.
 
-### Functionality: store and present documents
+## Usage and functionality
+
+### Store and present documents
 The extension creates a dedicated namespace with the `Cetei:` namespace prefix, which is where TEI XML documents can be stored and displayed.
 
 #### 1. Text
@@ -18,16 +20,16 @@ The section headed "About" is intended for metadata, i.e. information about the 
 #### 3. Source code
 To allow others to inspect the shape of the document and maybe learn from it, the raw source code is directly exposed in the final tabbed section.
 
-## Usage: edit documents
+### Edit documents
 
-### The text editor
+#### The text editor
 To best assist your users in editing documents, it is recommended that you have both [CodeEditor](https://www.mediawiki.org/wiki/Extension:CodeEditor) and [WikiEditor](https://www.mediawiki.org/wiki/Extension:WikiEditor) installed on your wiki. Here is why:
 
-#### The Ace code editor
+##### The Ace code editor
 
 The extension hooks into CodeEditor to support XML editing with Ace. [Ace](https://ace.c9.io) is a popular embeddable code editor whose features include colour-coded syntax highlighting, tabs, automatic indentation, line numbering, code folding and syntax checking.
 
-#### The WikiEditor toolbar
+##### The WikiEditor toolbar
 
 The toolbar at the top that comes with WikiEditor is configured and extended to serve as an aid to writing (TEI) XML. CodeEditor adds some useful features, including search/replace, soft wrap, indentation and a button to let you toggle back and forth between CodeEditor and the regular WikiEditor interface in case you have need of it.
 
@@ -35,9 +37,9 @@ The CETEIcean extension extends the toolbar further by introducing
 - a new booklet section, "TEI XML", which lets you insert elements and code snippets into the document. Please be aware that the present arrangement is basic and only provisional. It is currently organised into a number of categories, such as "Preliminaries", "Verse" and "Dictionaries", and will be revised, re-arranged and expanded in the future.
 - a button to launch the editor in full-screen mode.
 
-## Usage: The `#cetei` parser function
+### The `#cetei` parser function
 
-### Full document
+#### Full document
 ```
 {{#cetei:doc=URL (mandatory)
 }}
@@ -55,7 +57,7 @@ The `doc` parameter expects a full or local URL. This can refer to a wiki page, 
 }}
 ```
 
-### Excerpts
+#### Excerpts
 You can also fetch an excerpt by element tag name (in the original XML), or by attribute and attribute value, or by a combination of both. This may be simplified to single selectors in the future.
 
 ```
@@ -81,15 +83,12 @@ The following retrieves the paragraph where `xml:id` is `"p1"` :
 }}
 ```
 
-## Special:CETEIcean
+### Special:CETEIcean
 The special page `Special:CETEIcean` contains basic information about the extension and lists pages in the `Cetei:` namespace.
 
-## Customisation
-The extension comes with [system messages](https://www.mediawiki.org/wiki/Help:System_message) that can be customised if so desired. See the file `/i18n/en.json` (English only for now). The following examples are worth mentioning explicitly:
-- If you require a button or link to be added to the top right of a page in the extension namepace, i.e. on the opposite end of the tabbed headers on the left, you can add it to `MediaWiki:Cetei-top-right-content` (an empty div by default).
-- You are free to alter `MediaWiki:Cetei-edit-documentation-url` to set a different URL for the button that lets you edit the `/doc` subpage. The parameter `$1` will give you the title of that page. This can be useful if for instance, you prefer to use Page Forms or FlexForm instead of the regular wiki editor.
+## Setup
 
-## Installation
+### Installation
 - Download the files and add the folder (`Ceteicean`) to your `/extensions` folder.
 - Enable the extension in your `LocalSettings.php` file:
 ```
@@ -117,6 +116,11 @@ var configCustomBehaviors = {
  }
 }
 ```
+
+### Customisation
+The extension comes with [system messages](https://www.mediawiki.org/wiki/Help:System_message) that can be customised if so desired. See the file `/i18n/en.json` (English only for now). The following examples are worth mentioning explicitly:
+- If you require a button or link to be added to the top right of a page in the extension namepace, i.e. on the opposite end of the tabbed headers on the left, you can add it to `MediaWiki:Cetei-top-right-content` (an empty div by default).
+- You are free to alter `MediaWiki:Cetei-edit-documentation-url` to set a different URL for the button that lets you edit the `/doc` subpage. The parameter `$1` will give you the title of that page. This can be useful if for instance, you prefer to use Page Forms or FlexForm instead of the regular wiki editor.
 
 ## Notes
 ### Limitations
