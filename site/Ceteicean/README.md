@@ -48,12 +48,12 @@ The CETEIcean extension extends the toolbar further by introducing
 The `doc` parameter expects a full or local URL. This can refer to a wiki page, a document on the server, or if CORS is enabled for a particular remote source, an external document. To retrieve a wiki page, use either the `localurl` or `fullurl` magic word with the `action=raw` parameter, as shown below.
 
 ```
-{{#cetei: doc={{localurl:Cetei:Some document|action=raw}}
+{{#cetei:doc={{localurl:Cetei:Some document|action=raw}}
 }}
 ```
 
 ```
-{{#cetei: doc=https://example.com/mywiki/my-tei-xml-file.xml
+{{#cetei:doc=https://example.com/mywiki/my-tei-xml-file.xml
 }}
 ```
 
@@ -75,8 +75,7 @@ To retrieve an excerpt from the document by attribute, use the  `attr` and `attr
 
 The following retrieves the paragraph where `xml:id` is `"p1"` :
 ```
-{{#cetei:
-|doc={{fullurl:Cetei:Some document|action=raw}}
+{{#cetei:doc={{fullurl:Cetei:Some document|action=raw}}
 |p=el
 |attr=xml:id
 |attrval=p1
