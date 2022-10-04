@@ -4,12 +4,20 @@ use MediaWiki\Parser;
 
 class ctcTabWidget {
 
-  function run ( &$out, $outputContent, $docBtnStr, $docPageStr = '', $sourceCode, $hasTeiHeader ) {
+  function run (
+    &$out,
+    $pageTitle,
+    $ceteiInstanceDiv = '',
+    $docBtnStr,
+    $docPageStr = '',
+    $sourceCode,
+    $hasTeiHeader
+  ) {
 
     $ctcTabName1 = wfMessage( 'cetei-tabheader-1' )->parse(); //Text
     $ctcTabName2 = wfMessage( 'cetei-tabheader-2' )->parse(); //Doc
     $ctcTabName3 = wfMessage( 'cetei-tabheader-3' )->parse(); //Source
-    $ctcTopRight = wfMessage( 'cetei-top-right-content' )->parse();
+    $ctcTopRight = wfMessage( 'cetei-top-right-content' )->params( $pageTitle )->parse();
 
     /* Prepare toggle for TEI Header */
     if ( $hasTeiHeader === true ) {
@@ -35,20 +43,19 @@ class ctcTabWidget {
     $ctcTabHeaders .= '<a class="nav-tab-item" href="#nav-pane-3">' . $ctcTabName3 . '</a></div>' . $ctcTopRight . '</div>';
 
     $ctcTabContent1 = '<div class="cetei-tab-content">';
-    $ctcTabContent1 .= '<div class="cetei-tab-pane active" id="nav-pane-1">';
 
-    $ctcTabContent1 .= $ctcBeforeHeader;
-//<button id="toggle-tei-header" class="btn btn-default">
-    $ctcTabContent1 .= $outputContent . '</div>';
+    $ctcTabContent1 .= '<div class="cetei-tab-pane active" id="nav-pane-1">';
+    $ctcTabContent1 .= $ctcBeforeHeader . $ceteiInstanceDiv;
+    $ctcTabContent1 .= '</div>';
+
     $ctcTabContent1 .= '<div class="cetei-tab-pane" id="nav-pane-2">';
     $ctcTabContent1 .= '<div class="cetei-edit-doc">' . $docBtnStr . '</div>';
-
     $out->addHTML( $ctcTabHeaders . $ctcTabContent1 );
-
     $out->addWikiTextAsContent( $ctcDoc );
-
     $ctcTabContent2 = '</div>';
+
     $ctcTabContent2 .= '<div class="cetei-tab-pane" id="nav-pane-3">' . $sourceCode . '</div>';
+
     $ctcTabContent2 .= '</div>';
 
     $ctcTabContent2 .= '<hr/><div class="cetei-credits-bottom">' . wfMessage( 'cetei-credits-bottom' )->parse() . '</div></div>';
