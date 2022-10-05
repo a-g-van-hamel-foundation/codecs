@@ -119,20 +119,20 @@ var configCustomBehaviors = {
 ### Customisation
 The extension comes with [system messages](https://www.mediawiki.org/wiki/Help:System_message) that can be customised if so desired. See the file `/i18n/en.json` (English only for now). The following examples are worth mentioning explicitly:
 - If you require a button or link to be added to the top right of a page in the extension namepace, i.e. on the opposite end of the tabbed headers on the left, you can add it to `MediaWiki:Cetei-top-right-content` (an empty div by default).
-- You are free to alter `MediaWiki:Cetei-edit-documentation-url` to set a different URL for the button that lets you edit the `/doc` subpage. The parameter `$1` will give you the title of that page. This can be useful if for instance, you prefer to use Page Forms or FlexForm instead of the regular wiki editor.
+- You are free to alter `MediaWiki:Cetei-edit-documentation-url` to set a different URL for the button that lets you edit the `/doc` subpage. This can be useful if for instance, you prefer to use Page Forms or FlexForm instead of the regular wiki editor.
+In both cases, the parameter `$1` will give you the title of the page. There is no need to call FULLPAGENAME. 
 
 ## Notes
 ### Limitations
 - Definitions of character entities must be registered inline. The CETEIcean library does not yet support references to external DTDs. To make life easier, one of the booklets in the editor offers a default set of character definitions that can be inserted at the top of the document.
 - It is mandatory that the TEI element contains a namespace declaration such as `xmlns="http://www.tei-c.org/ns/1.0"`.
-- Because any content retrieved with the `#cetei` parser function is lazy-loaded, you cannot reuse it for new purposes in wikitext. For queries with XMLPath, see the ExternalData extension.
+- Because any content retrieved with the `#cetei` parser function is lazy-loaded, you cannot reuse it for new purposes in wikitext. For queries with XPath, see the ExternalData extension.
 - When it comes to handling large documents (1MB or over), there are limits to processing power. In part, this is due to the usual restrictions relating to `$wgMaxArticleSize` and the HTTP/HTTPS connector request size, but other factors may come into play, too.
 - This extension was not designed for a public wiki where anyone can edit. It is currently unknown if any additional security measures would be required.
 
 ### Known issues
 - ACE tends not to play nice with character entity definitions and produces error warnings for every instance it fails to identify. In some documents, this may throw numerous error warnings saying "Entity not found", obscuring any messages that do matter. By way of a quick and dirty solution, you can hack into `CodeEditor/modules/ace/xml-worker.js` and suppress those warnings by commenting out the line beginning `ErrorHandler.error('entity not found:'+a)`. Make sure to purge cache afterwards, which you may have to attempt repeatedly because it can be stubborn.
 - Syntax errors in your XML document may not always fail gracefully.
-- It is possible that there are still issues relating to certain types of caching, such as parser cache. You may notice that after a page edit, the output does not represent the latest revision and that a hard refresh is required to fetch it.
 
 ### Developer notes
 - Because this extension was written and tested with MW 1.35, which does not offer support for ES6 with ResourceLoader, the code in CETEIcean’s JS files has been transpiled to ES5 using [Babel js](https://babeljs.io) and a polyfill for custom elements is added as a dependency.
