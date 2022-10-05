@@ -88,6 +88,8 @@ The special page `Special:CETEIcean` contains basic information about the extens
 ## Setup
 
 ### Installation
+Note: this extension was written and tested with MW 1.35 and is unlikely to work in MW 1.36 or above. 
+
 - Download the files and add the folder (`Ceteicean`) to your `/extensions` folder.
 - Enable the extension in your `LocalSettings.php` file:
 ```
