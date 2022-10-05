@@ -6,6 +6,9 @@ Its support for working with TEI XML is twofold: first, TEI XML documents can be
 
 This extension is being created for the CODECS website (https://codecs.vanhamel.nl), a project published by the [A. G. van Hamel Foundation for Celtic Studies](https://stichting.vanhamel.nl). It is currently in beta status and functionality at this stage is likely to be tied closely to the needs of the CODECS platform. It is not dependent on this environment, however, and you're welcome to try it out and provide feedback or patches.
 
+## Demo (provisional)
+https://codecs.vanhamel.nl/Show:CETEIcean
+
 ## Usage and functionality
 
 ### Store and present documents
