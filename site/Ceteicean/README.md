@@ -1,6 +1,6 @@
 # CETEIcean extension for MediaWiki (beta)
 
-The CETEIcean extension is an extension to MediaWiki which implements the JavaScript library [CETEIcean](https://github.com/TEIC/CETEIcean) (pronounce: `/sɪˈti:ʃn/`) to let users collaborate on and display [TEI XML](https://tei-c.org/) documents on the wiki. CETEIcean differs from other, typically XSLT-based methods of rendering TEI XML in that the web output uses Custom Elements (CE) of the Web Components standards, preserving much of the structure of the original document.
+The CETEIcean extension is an extension to MediaWiki which implements the JavaScript library [CETEIcean](https://github.com/TEIC/CETEIcean) (pronounce: `/sɪˈti:ʃn/`) to let users collaborate on and display [TEI XML](https://tei-c.org/) documents on the wiki. CETEIcean differs from other, typically XSLT-based methods of rendering TEI XML in that the web output uses HTML5 Custom Elements (CE) of the Web Components standards and preserves much of the structure of the original document.
 
 Its support for working with TEI XML is twofold: first, TEI XML documents can be created, edited and displayed in a dedicated namespace of the wiki; and second, a parser function (`#cetei`) can be used to embed documents, or even discrete sections of them, inline in wikitext.
 
@@ -18,7 +18,7 @@ The extension creates a dedicated namespace with the `Cetei:` namespace prefix, 
 The section headed "Text" renders the document. The TEI Header is hidden by default, but its visibility can be toggled on and off. A message appears instead if none has been provided.
 
 #### 2. About
-The section headed "About" is intended for metadata, i.e. information about the document. It lets you transclude wikitext content from a `/doc` subpage, similar to how the Scribunto extension lets you associate documentation pages with Lua modules. If you have installed Semantic MediaWiki, you can add semantic properties. Just be aware that it is up to you to prevent semantic information from becoming duplicated as a result of transclusion. The rationale is that it should be up to you whether semantic data gets attached to the document (through transclusion) or to the `/doc` subpage. See Customisation below for some help.
+The section headed "About" is intended for additional information about the document. It lets you transclude wikitext content from a `/doc` subpage, similar to how the Scribunto extension lets you associate documentation pages with Lua modules. If you have installed Semantic MediaWiki, this is where you can add semantic properties. Just be aware that it is up to you to prevent semantic information from becoming duplicated as a result of transclusion. The reason is that it should be up to you whether semantic data gets attached to the document (through transclusion) or to the `/doc` subpage.
 
 #### 3. Source code
 To allow others to inspect the shape of the document and maybe learn from it, the raw source code is directly exposed in the final tabbed section.
@@ -93,7 +93,7 @@ The special page `Special:CETEIcean` contains basic information about the extens
 ### Installation
 Note: this extension was written and tested with MW 1.35 and is unlikely to work in MW 1.36 or above. 
 
-- Download the files and add the folder (`Ceteicean`) to your `/extensions` folder.
+- Download the files and add the folder (`Ceteicean`) to your `/extensions` directory.
 - Enable the extension in your `LocalSettings.php` file:
 ```
 wfLoadExtension( 'Ceteicean' );
