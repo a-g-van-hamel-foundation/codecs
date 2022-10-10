@@ -49,8 +49,7 @@ function teiHeaderToggleAction( btn ) {
 	  }
 }
 
-document.addEventListener("DOMContentLoaded", [
-		ctcNavTabs(),
-		teiHeaderToggleClick( 'toggle-tei-header' )
-	]
-);
+jQuery(document).ready(function($) {
+	ctcNavTabs();
+	teiHeaderToggleClick( 'toggle-tei-header' );
+});
