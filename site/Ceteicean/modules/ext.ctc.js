@@ -153,9 +153,10 @@ function convertCeteiInstances( divEl ) {
 	});
 }
 
-var ceteiTriggerSel = '.cetei-instance[data-doc]';
-//convertCeteiInstances( ceteiTriggerSel );
-document.addEventListener('DOMContentLoaded', convertCeteiInstances( ceteiTriggerSel ) );
+jQuery(document).ready(function($) {
+	var ceteiTriggerSel = '.cetei-instance[data-doc]';
+	convertCeteiInstances( ceteiTriggerSel );
+});
 
 // The enclosed code runs only after the page has been loaded and parsed.
 
