@@ -41,6 +41,7 @@ The CETEIcean extension extends the toolbar further by introducing
 - a button to launch the editor in full-screen mode.
 
 ### The `#cetei` parser function
+:point_up: _Will be revised_
 
 #### Full document
 ```
