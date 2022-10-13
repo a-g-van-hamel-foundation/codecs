@@ -1,1 +1,30 @@
-
+{
+  "name": "mirador-webpack-example",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build": "webpack --config webpack.config.js --mode=production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^6.2.0",
+    "mirador": "^3.2.0",
+    "mirador-image-tools": "^0.11.0",
+    "mirador-imagecropper": "^0.1.1",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0",
+    "@blueprintjs/core": "^3.15.1",
+    "@blueprintjs/icons": "^3.9.0"
+  },
+  "devDependencies": {
+  },
+  "peerDependencies": {
+  }
+}
