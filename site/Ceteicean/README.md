@@ -1,4 +1,5 @@
 # CETEIcean extension for MediaWiki (beta)
+*Note: This extension is being rewritten. The syntax of the parser function will be changed to allow for selection through XPath expressions as opposed to using current parameters (`el/attr/attrval`). Also, for the initial steps of conversion, it will rely on XSLT.*
 
 The CETEIcean extension is an extension to MediaWiki which implements the JavaScript library [CETEIcean](https://github.com/TEIC/CETEIcean) (pronounce: `/sɪˈti:ʃn/`) to let users collaborate on and display [TEI XML](https://tei-c.org/) documents on the wiki. CETEIcean differs from other, typically XSLT-based methods of rendering TEI XML in that the web output uses HTML5 Custom Elements (CE) of the Web Components standards and preserves much of the structure of the original document.
 
@@ -62,7 +63,11 @@ The `doc` parameter expects a full or local URL. This can refer to a wiki page, 
 ```
 
 #### Excerpts
-You can also fetch an excerpt by element tag name (in the original XML), or by attribute and attribute value, or by a combination of both. This may be simplified to single selectors in the future.
+You can also fetch an excerpt by element tag name (in the original XML), or by 
+
+
+
+ibute and attribute value, or by a combination of both. This may be simplified to single selectors in the future.
 
 ```
 {{#cetei:doc=URL (mandatory)
