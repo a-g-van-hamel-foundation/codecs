@@ -1,3 +1,5 @@
+_The present repository does not contain the platform’s software. It is used to provide an [issue board](https://github.com/a-g-van-hamel-foundation/codecs/issues) and store a number of auxiliary resources._
+
 # CODECS
 CODECS: Collaborative Online Database and e-Resources for Celtic Studies
 
@@ -7,9 +9,10 @@ CODECS (https://codecs.vanhamel.nl), an acronym for Collaborative Online Databas
 ## The issue board 
 Do you have any questions about CODECS, do you want to report errors or technical issues, or just want to offer suggestions? Feel free to submit a post to the [issue board](https://github.com/a-g-van-hamel-foundation/codecs/issues) associated with this repository. 
 
-## This repository
-The present repository is merely used to store a number of auxiliary resources. It does not contain the platform’s software.
-
 ## See also
-- [Mirador extension](https://github.com/a-g-van-hamel-foundation/Mirador)
+### MediaWiki extensions developed for CODECS
 - [CETEIcean extension](https://github.com/a-g-van-hamel-foundation/CETEIcean)
+- [Mirador extension](https://github.com/a-g-van-hamel-foundation/Mirador) 
+- [IIIF extension](https://github.com/a-g-van-hamel-foundation/IIIF)
+- [ReconciliationAPI extension](https://github.com/a-g-van-hamel-foundation/ReconciliationAPI)
+- [TemplateFunc extension](https://github.com/a-g-van-hamel-foundation/TemplateFunc)
